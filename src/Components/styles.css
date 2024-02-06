@@ -1,0 +1,19 @@
+.home {
+    max-width: 1100px;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    padding: auto;
+}
+
+ul {
+    list-style: none;
+    background-color: #eee;
+}
+.country_img {
+    width: 13rem;
+    height: 10rem; 
+    background-color: #eee;
+    border-top-left-radius: 0.7rem;
+    border-top-right-radius: 0.7rem;
+}
