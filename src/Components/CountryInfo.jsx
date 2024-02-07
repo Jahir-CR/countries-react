@@ -4,9 +4,12 @@ import "./styles.css";
 
 const CountryInfo = () => {
   const [countries, setCountry] = useState({name: "", capital: "", image: ""}); 
+  const getStoredUser = JSON.parse(localStorage.getItem('user'));
+  
   
   const GetCountry = async () => {
     const countryName = document.querySelector(".country").value;
+    console.log(getStoredUser);
     const countriesNames = await api
       .get(`/${countryName}`)
       .then((res) => {
@@ -38,9 +41,10 @@ const CountryInfo = () => {
             {
               <li>
                 <div>
-                  <p>País: {countries.name}</p>
-                  <p>Capital: {countries.capital}</p>
+                  <p className="username">Usuario: {getStoredUser.username}</p>
                   <img className = "country_img" src={countries.image}></img>
+                  <p className="pais">País: {countries.name}</p>
+                  <p className = "capital">Capital: {countries.capital}</p>
                 </div>
               </li>
             }

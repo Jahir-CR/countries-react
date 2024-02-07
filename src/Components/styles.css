@@ -1,19 +1,33 @@
 .home {
-    max-width: 1100px;
-    height: 100%;
-    text-align: center;
-    align-items: center;
-    padding: auto;
+  width: 1100px;
+  text-align: center;
+  align-items: center;
+}
+
+.home-container {
+  position: relative;
+  top: 20px;
 }
 
 ul {
-    list-style: none;
-    background-color: #eee;
+  list-style: none;
+  background-color: #eee;
 }
+
+.pais{
+position: relative;
+    top: 10px;
+}
+
+.capital{
+    position: relative;
+        top: 2px;
+}
+
 .country_img {
-    width: 15rem;
-    height: 10rem; 
-    background-color: #eee;
-    border-top-left-radius: 0.7rem;
-    border-top-right-radius: 0.7rem;
+  width: 15rem;
+  height: 10rem;
+  background-color: #eee;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
 }
